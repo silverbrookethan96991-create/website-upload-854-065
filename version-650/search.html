@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>影片搜索-热门亚洲影片-高清免费在线观看</title>
+  <meta name="description" content="搜索热门亚洲影片、亚洲影片、热门影片片库与高清免费精选影片。">
+  <meta name="keywords" content="影片搜索,热门亚洲影片,亚洲影片,热门影片,影片片库,高清免费,精选影片">
+  <link rel="stylesheet" href="./assets/style.css">
+  
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="./index.html" aria-label="热门亚洲影片首页">
+      <span class="brand-icon">▶</span>
+      <span class="brand-text">热门亚洲影片</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="主导航">
+      <a class="nav-link" href="./index.html">首页</a>
+      <a class="nav-link" href="./categories.html">影片分类</a>
+      <a class="nav-link" href="./ranking.html">高分榜单</a>
+      <a class="nav-link active" href="./search.html">搜索</a>
+    </nav>
+    <form class="top-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片、地区、题材" aria-label="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</header>
+
+<main class="sub-page">
+  <section class="page-hero container search-hero">
+    <p class="eyebrow">影片搜索</p>
+    <h1>搜索热门亚洲影片</h1>
+    <p>输入影片名称、题材、地区、年份或标签，快速发现片库内容。</p>
+    <form class="big-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="输入关键词" autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+  </section>
+  <section class="container">
+    <div class="movie-grid six-col" id="searchResults"></div>
+    <div class="empty-state" id="searchEmpty">输入关键词开始搜索</div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand"><span class="brand-icon">▶</span><span>热门亚洲影片</span></div>
+      <p>热门亚洲影片栏目聚合高热度亚洲影片，涵盖多地区、多题材内容，方便片库式浏览。</p>
+    </div>
+    <div>
+      <h2>快速导航</h2>
+      <ul>
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./categories.html">影片分类</a></li>
+        <li><a href="./ranking.html">高分榜单</a></li>
+        <li><a href="./search.html">影片搜索</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>热门分类</h2>
+      <ul>
+        <li><a href="./category-hot-asian.html">亚洲热播</a></li>
+        <li><a href="./category-hd-choice.html">高清精选</a></li>
+        <li><a href="./category-trending.html">热门片库</a></li>
+        <li><a href="./category-romance.html">情感都市</a></li>
+        <li><a href="./category-suspense.html">悬疑惊悚</a></li>
+        <li><a href="./category-action.html">动作犯罪</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 热门亚洲影片 · 高清片库</div>
+</footer>
+
+<script src="./assets/app.js"></script>
+<script src="./assets/search-index.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
